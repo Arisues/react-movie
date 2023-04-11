@@ -4,7 +4,11 @@ import { Link, useLocation } from 'react-router-dom';
 
 import './header.scss';
 
-import logo from '../../assets/tmovie.png';
+import LoggedIn from "../LoggedIn/LoggedIn"
+
+import LoginForm from "../LoginForm/LoginForm"
+
+import logo from '../../assets/tmovie.jpg';
 
 const headerNav = [
     {
@@ -46,8 +50,8 @@ const Header = () => {
         <div ref={headerRef} className="header">
             <div className="header__wrap container">
                 <div className="logo">
-                    <img src={logo} alt="" />
-                    <Link to="/">tMovies</Link>
+                   <Link to="/"><img src={logo} alt="" /></Link>
+                    <Link to="/">Fiopic</Link>
                 </div>
                 <ul className="header__nav">
                     {
