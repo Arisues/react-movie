@@ -20,6 +20,8 @@ const LoginForm = ({ setIsLoggedIn }) => {
     // Prevent page from reloading
     e.preventDefault();
 
+    console.log(database.pop());
+
     if (!username) {
       // Username input is empty
       setErrorMessages({ name: "noUsername", message: errors.noUsername });
@@ -58,6 +60,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
 
   return (
     <Card>
+      <div className="background">
       <h1 className="title">Sign In</h1>
       <p className="subtitle">
         Please log in using your username and password!
@@ -87,6 +90,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
         <a href="" className="small">
           Forgot Password?
         </a>
+      </div>
       </div>
     </Card>
   );

@@ -78,6 +78,14 @@
   margin: 0;
 }
 
+.background {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin: auto;
+}
+
+
+
 @media only screen and (max-width: 620px) {
   .inputs_container input {
     width: 100%;

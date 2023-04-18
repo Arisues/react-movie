@@ -4,11 +4,9 @@ import { Link, useLocation } from 'react-router-dom';
 
 import './header.scss';
 
-import LoggedIn from "../LoggedIn/LoggedIn"
-
-import LoginForm from "../LoginForm/LoginForm"
-
 import logo from '../../assets/tmovie.jpg';
+
+
 
 const headerNav = [
     {
@@ -22,7 +20,11 @@ const headerNav = [
     {
         display: 'TV Series',
         path: '/tv'
-    }
+    },
+    {
+        display: 'About',
+        path: '/about'
+    },
 ];
 
 const Header = () => {
@@ -61,12 +63,22 @@ const Header = () => {
                                     {e.display}
                                 </Link>
                             </li>
+                            
                         ))
+                    
                     }
                 </ul>
             </div>
+            
         </div>
-    );
+
+);
+    
 }
 
+
+
 export default Header;
+
+
+
